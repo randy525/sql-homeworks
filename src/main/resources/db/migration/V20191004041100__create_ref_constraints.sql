@@ -48,3 +48,24 @@ ALTER TABLE JOB_HISTORY
 ALTER TABLE LOCATIONS
     ADD CONSTRAINT LOC_C_ID_FK FOREIGN KEY (COUNTRY_ID)
         REFERENCES COUNTRIES (COUNTRY_ID);
+
+
+--------------------------------------------------------
+--  Ref Constraints for Table PAY
+--------------------------------------------------------
+
+ALTER TABLE PAY
+    ADD CONSTRAINT PAY_EMP_FK FOREIGN KEY (EMPLOYEE_ID)
+        REFERENCES EMPLOYEES (EMPLOYEE_ID);
+
+--------------------------------------------------------
+--  Ref Constraints for Table HOURS_WORKED
+--------------------------------------------------------
+
+ALTER TABLE HOURS_WORKED
+    ADD CONSTRAINT HOURS_EMP_FK FOREIGN KEY (EMPLOYEE_ID)
+        REFERENCES EMPLOYEES (EMPLOYEE_ID);
+
+ALTER TABLE HOURS_WORKED
+    ADD CONSTRAINT HOURS_PRJCT_FK FOREIGN KEY (PROJECT_ID)
+        REFERENCES PROJECTS (PROJECT_ID);
