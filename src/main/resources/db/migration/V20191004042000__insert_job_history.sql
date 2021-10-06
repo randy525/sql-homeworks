@@ -20,4 +20,6 @@ INSERT INTO employees VALUES (EMPLOYEES_SEQ.nextval,
                               NULL,
                               1);
 
-INSERT INTO job_history VALUES (1, TO_DATE('2019/07/22', 'yyyy/mm/dd'), TO_DATE('2020/04/14', 'yyyy/mm/dd'), 'JAVA_DEV', 1)
+INSERT INTO job_history VALUES (1, TO_DATE('2019/07/22', 'yyyy/mm/dd'), TO_DATE('2020/04/14', 'yyyy/mm/dd'), 'JAVA_DEV', 1);
+
+INSERT INTO PAY(cardNr, employee_id) VALUES ('5400170594741151', 1);
